@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+<style>
+body{
+  background-color:#FFE4E1;
+}
+
+header{
+  font-family:Roboto;
+  font-size:26px;
+  colour:black;
+  font-weight:bold;
+  text-align:center;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+#survey-form{
+  background-color:#FFFFFF;
+  font-family:Quicksand;
+  max-width:70%;
+  margin:auto;
+  padding:0;
+  border-radius:15px;
+}
+
+#description{
+  text-align:center;
+  font-size:16px;
+  padding-top:17px;
+  font-weight:bold;
+}
+
+.fieldset{
+  border-width:0;
+  padding-top:1%;
+
+}
+
+.sub-group{
+  position:relative;
+  right:30px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  padding:1%;
+}
+
+label.left{
+  width:30%;
+  padding-right:4%;
+  text-align:right;
+}
+
+
+.right{
+  width:30%;
+}
+
+.input-field{
+  height:20px;
+  padding:5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+#dropdown{
+  font-family:Quicksand;
+  height:30px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.checkbox{
+  position:relative;
+  padding:3px;
+  right:3px;
+  bottom:15px;
+}
+
+.radio{
+  position:relative;
+  padding:3px;
+  bottom:15px;
+}
+
+h2{
+  position:relative;
+  bottom:8px;
+  font-size:16px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.commentbox{
+  text-align:center;
+}
+
+textarea{
+  width:65%;
+  border-radius:4px;
+}
+
+#submit{
+  background:#FFE4E1;
+  font-family:Roboto;
+  border-radius:4px;
+  font-size:23px;
+}
+
+label:hover{
+  cursor:pointer;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 580px) {
+  body {
+    font-size: 9px;
+  }
+}
+</style>
+  <body>
+  <header>
+  <div id="title"><h1>Student details</h1>
+    </header>
+
+<form id="survey-form">
+
+  <div id="description"> </div><br>
+
+  <fieldset class="fieldset">
+
+    <div class="sub-group">
+      <label class="left" id="Last name" for="Last name">Last name</label>
+    <input type="text" name="customer-name" class="right input-field" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="sub-group">
+      <label class="left" id="First name" for="First name">First name</label>
+    <input type="name" name="name" class="right input-field" placeholder="Enter your name" id="name" required>
+    </div>
+
+    <div class="sub-group">
+      <label  class="left" id="number-label" for="number">Age:</label>
+    <input type="number" name="Age" placeholder="Age" min="1" max="100" class="right input-field" id="number">
+  </div>
+
+    <div class="sub-group">
+      <label class="left" id="Phone no." for="Phone no.">Phone no.</label>
+
+    <input type="text" placeholder="Phone Number" class="right input-field" id="phone no.">
+  </div>
+
+    <div class="sub-group">
+      <label class="left" for="dropdown">Gender</label>
+
+      <select class="right dropdown" id="dropdown" name="dropdown">
+        <option selected disabled>Select an option</option>
+        <option value="first">Female</option>
+        <option value="never">Male</option>
+<option value="never">other</option>
+      </select>
+    </div>
+  </fieldset>
+<div class="sub-group">
+      <label class="left" id="school name." for="Phone no.">School name.</label>
+
+    <input type="text" placeholder="School name" class="right input-field" id="School name.">
+  </div>
+<div class="sub-group">
+      <label class="left" id="percentage." for="percentage.">10th percentage</label>
+
+    <input type="percentage" placeholder="percentage" class="right input-field" id="10th percentage.">
+  </div>
+
+ 
+
+     <fieldset class="fieldset">
+   <h2>About your passion</h2>
+
+    <div class="commentbox">
+
+   <textarea rows="4"  placeholder="Enter your comment here..."></textarea>
+
+   <br></br>
+
+   <form action="homepage.html">
+    <button type="submit" class="button">submit</button></form>
+</div></fieldset>
+     
+</form>
+</div>
+  </body>
+</html>
